@@ -27,15 +27,46 @@ return {
 
     -- opts -------------------------------------------------------------------
     opts = {
-      prompt = prompts,
-      auto_follow_cursor = false, -- Don't follow the cursor after getting response
+      prompts = prompts,
+      auto_follow_cursor = true,
       mappings = {
-        close = "q", -- Close chat
-        reset = "<C-l>", -- Clear the chat buffer
-        complete = "<Tab>", -- Change to insert mode and press tab to get the completion
-        submit_prompt = "<CR>", -- Submit question to Copilot Chat
-        accept_diff = "<C-a>", -- Accept the diff
-        show_diff = "<C-s>", -- Show the diff
+        -- Use tab for completion
+        complete = {
+          detail = "Use @<Tab> or /<Tab> for options.",
+          insert = "<Tab>",
+        },
+        -- Close the chat
+        close = {
+          normal = "q",
+          insert = "<C-c>",
+        },
+        -- Reset the chat buffer
+        reset = {
+          normal = "<C-l>",
+          insert = "<C-l>",
+        },
+        -- Submit the prompt to Copilot
+        submit_prompt = {
+          normal = "<CR>",
+          insert = "<C-CR>",
+        },
+        -- Accept the diff
+        accept_diff = {
+          normal = "<C-y>",
+          insert = "<C-y>",
+        },
+        -- Show the diff
+        show_diff = {
+          normal = "gmd",
+        },
+        -- Show the prompt
+        show_system_prompt = {
+          normal = "gmp",
+        },
+        -- Show the user selection
+        show_user_selection = {
+          normal = "gms",
+        },
       },
     },
 
@@ -68,6 +99,15 @@ return {
       vim.api.nvim_create_user_command("CopilotChatBuffer", function(args)
         chat.ask(args.args, { selection = select.buffer })
       end, { nargs = "*", range = true })
+
+      -- Custom buffer for CopilotChat
+      vim.api.nvim_create_autocmd("BufEnter", {
+        pattern = "copilot-*",
+        callback = function()
+          vim.opt_local.relativenumber = true
+          vim.opt_local.number = true
+        end,
+      })
     end,
 
     -- keys -------------------------------------------------------------------
