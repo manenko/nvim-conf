@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "pablo",
-    }
-  }
+      colorscheme = os.getenv("NVIM_THEME") or "habamax",
+    },
+  },
 }

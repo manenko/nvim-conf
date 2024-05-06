@@ -3,3 +3,5 @@
 -- Add any additional options here
 
 vim.opt.colorcolumn = "+1"
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
