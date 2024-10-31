@@ -15,4 +15,12 @@ return {
     "lewis6991/gitsigns.nvim",
     enabled = false,
   },
+  {
+    "garymjr/nvim-snippets",
+    enabled = false,
+  },
+  {
+    "rafamadriz/friendly-snippets",
+    enabled = false,
+  },
 }
