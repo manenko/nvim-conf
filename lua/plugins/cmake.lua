@@ -8,7 +8,7 @@ return {
     opts = {
       servers = {
         cmake = {
-          buildDirectory = "_b",
+          buildDirectory = "_build",
         },
       },
     },

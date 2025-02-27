@@ -14,4 +14,4 @@
 "setlocal cindent
 "setlocal cinoptions=:0,l1,t0,g0,(0
 
-setlocal sw=4 ts=8 tw=78 et
+setlocal sw=2 ts=8 tw=78 et

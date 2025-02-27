@@ -5,3 +5,4 @@
 vim.opt.colorcolumn = "+1"
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
+vim.opt.exrc = true
