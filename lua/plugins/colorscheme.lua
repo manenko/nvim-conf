@@ -1,9 +1,12 @@
 return {
   {
+    "EdenEast/nightfox.nvim",
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      background = "dark",
-      colorscheme = os.getenv("NVIM_THEME") or "github_dark",
+      background = "light",
+      colorscheme = "dayfox",
     },
   },
 }
