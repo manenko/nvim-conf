@@ -2,7 +2,9 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
-vim.opt.colorcolumn = "+1"
+--vim.opt.colorcolumn = "+1"
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
 vim.opt.exrc = true
+
+vim.g.xcodelight_match_paren_style = 1
