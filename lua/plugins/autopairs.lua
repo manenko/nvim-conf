@@ -43,6 +43,9 @@ return {
                     :with_cr(function() return true end),
             })
 
+            -- Remove backtick pairing for OCaml
+            autopairs.get_rules('`')[1].not_filetypes = { 'ocaml' }
+
             -- Integrate with nvim-cmp
             local cmp_autopairs = require("nvim-autopairs.completion.cmp")
             local cmp           = require("cmp")
