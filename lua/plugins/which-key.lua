@@ -16,7 +16,25 @@ return {
                 { "<leader>g", group = "Git" },
                 { "<leader>w", group = "Window" },
                 { "<leader>c", group = "Code" },
+                { "<leader>b", group = "Buffer" },
             })
+
+            -- Nvlime (Common Lisp) key groups - register on FileType
+--            vim.api.nvim_create_autocmd("FileType", {
+--                pattern = "lisp",
+--                callback = function()
+--                    wk.add({
+--                        { "\\c", group = "Connection" },
+--                        { "\\r", group = "Server" },
+--                        { "\\s", group = "Send/Eval" },
+--                        { "\\i", group = "Inspect" },
+--                        { "\\d", group = "Documentation" },
+--                        { "\\x", group = "Xref" },
+--                        { "\\m", group = "Macro" },
+--                        { "\\w", group = "Window" },
+--                    })
+--                end,
+--            })
         end,
     },
 }

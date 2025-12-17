@@ -4,7 +4,7 @@ local keymap = vim.keymap.set
 
 -- Set leader key to space
 vim.g.mapleader      = " "
-vim.g.maplocalleader = " "
+vim.g.maplocalleader = "\\"
 
 -------------------------------------------------------------------------------
 -- keymap(mode, keys, action, options)

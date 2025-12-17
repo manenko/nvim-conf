@@ -33,5 +33,5 @@ opt.splitright     = true          -- Vertical splits open to the right
 opt.splitbelow     = true          -- Horizontal splits open below
 
 -- Spell check
-opt.spell          = true          -- Enable spell check
-opt.spelllang      = "en_gb"       -- Use Great Britain English dictionary
+--opt.spell          = true          -- Enable spell check
+--opt.spelllang      = "en_gb"       -- Use Great Britain English dictionary
