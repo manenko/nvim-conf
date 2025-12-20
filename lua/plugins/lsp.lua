@@ -36,6 +36,10 @@ return {
           vim.api.nvim_create_autocmd("BufWritePre", {
             buffer = ev.buf,
             callback = function()
+              -- Skip formatting for dune files
+              if vim.bo.filetype == "dune" then
+                return
+              end
               vim.lsp.buf.format({ async = false })
             end,
           })
