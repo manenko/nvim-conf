@@ -50,8 +50,8 @@ keymap("n", "<S-l>", ":bnext<CR>",     {desc = "Next buffer"})
 keymap("n", "<S-h>", ":bprevious<CR>", {desc = "Previous buffer"})
 
 -- Buffer management
-keymap("n", "<leader>bd", ":bdelete<CR>",        {desc = "Delete buffer"})
-keymap("n", "<leader>bD", ":bdelete!<CR>",       {desc = "Force delete buffer"})
+--keymap("n", "<leader>bd", ":bdelete<CR>",        {desc = "Delete buffer"})
+--keymap("n", "<leader>bD", ":bdelete!<CR>",       {desc = "Force delete buffer"})
 keymap("n", "<leader>bw", ":bwipeout<CR>",       {desc = "Wipeout buffer"})
 keymap("n", "<leader>bn", ":enew<CR>",           {desc = "New buffer"})
 keymap("n", "<leader>bb", "<C-^>",               {desc = "Alternate buffer"})

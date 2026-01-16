@@ -94,13 +94,13 @@ return {
       })
 
       -- Enable language servers
-      vim.lsp.enable('clangd')        -- C and C++
-      vim.lsp.enable('rust_analyzer') -- Rust
-      vim.lsp.enable('clojure_lsp')   -- Clojure
-      vim.lsp.enable('ocamllsp')      -- OCaml
-      vim.lsp.enable('cmake')         -- CMake
-      vim.lsp.enable('bashls')        -- Bash
-      vim.lsp.enable('lua_ls')        -- Lua
+      vim.lsp.enable('clangd')
+      vim.lsp.enable('rust_analyzer')
+      vim.lsp.enable('clojure_lsp')
+      vim.lsp.enable('ocamllsp')
+      vim.lsp.enable('cmake')
+      vim.lsp.enable('bashls')
+      vim.lsp.enable('lua_ls')
     end
   }
 }

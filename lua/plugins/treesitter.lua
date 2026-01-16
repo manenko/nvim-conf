@@ -42,7 +42,8 @@ return {
 
                 -- Enable indentation based on treesitter
                 indent = {
-                    enable = true,
+                    enable  = true,
+                    disable = { "ocaml", "ocamlinterface" },
                 },
             })
         end
